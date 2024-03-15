@@ -1,0 +1,82 @@
+Program.Sub.ScreenSU.Start
+Gui.Form..Create
+Gui.Form..Size(4665,4020)
+Gui.Form..MinX(0)
+Gui.Form..MinY(0)
+Gui.Form..Position(0,0)
+Gui.Form..BackColor(-2147483633)
+Gui.Form..MousePointer(0)
+Gui.Form..Event(UnLoad,Form_UnLoad)
+Gui.Form..Caption("BOM Job WC Status")
+Gui.Form.lbl1.Create(Label,"Select Job",True,1110,255,0,630,1080,True,0,"Arial",8,-2147483633,0)
+Gui.Form.cboJob.Create(ComboBox)
+Gui.Form.cboJob.Size(1860,330)
+Gui.Form.cboJob.Position(1770,1005)
+Gui.Form.cmd1.Create(Button)
+Gui.Form.cmd1.Size(1440,810)
+Gui.Form.cmd1.Position(2115,1920)
+Gui.Form.cmd1.Caption("Build Report")
+Gui.Form.cmd1.Event(Click,cmd1_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+v.Local.sCoCode.Declare(string,"Global_")
+v.Local.sconn.Declare(string)
+
+
+	f.Intrinsic.String.Concat(v.Local.sCoCode,v.Caller.CompanyCode,v.Local.sCoCode)
+	F.ODBC.Connection!conx.OpenConnection(V.Local.scocode,V.Ambient.Cuser,V.Ambient.Cpass)
+	f.Intrinsic.String.Concat(v.Local.sconn,"Global_",v.Caller.CompanyCode,v.Local.sconn)
+	F.ODBC.Connection!common.OpenConnection(V.Local.Sconn,V.Ambient.Cuser,V.Ambient.Cpass)
+
+		
+	'POPULATE DROPDOWN WITH VALID JOBS
+	F.ODBC.Connection!ConX.OpenLocalRecordsetRO("rstJobs","SELECT DISTINCT JOB FROM JOB_HEADER where (suffix = '000' or suffix = '') and date_closed = '000000' ORDER BY JOB")
+	F.Intrinsic.Control.DoUntil(V.ODBC.ConX!rstJobs.EOF,=,True)
+		Gui.Form.cboJob.AddItem(V.ODBC.ConX!rstJobs.FieldVal!JOB)
+			F.ODBC.ConX!rstJobs.MoveNext
+	F.Intrinsic.Control.Loop
+
+	gui.Form..Show
+
+Program.Sub.Main.End
+
+Program.Sub.Form_UnLoad.Start
+f.Intrinsic.Control.End
+
+F.ODBC.ConX!rstCommon.Close
+
+F.ODBC.Common!rstCommon.Close
+	
+
+Program.Sub.Form_UnLoad.End
+
+Program.Sub.cmd1_Click.Start
+v.Local.sTopJob.Declare(string)
+v.Local.sTopSuffix.Declare(string)
+v.Local.sSqlTopJob.Declare(string)
+v.Local.sTopJobSql.Declare(string)
+V.Local.IBIRptID.Declare
+V.Local.lBIRptID.Declare
+v.Local.sSql.Declare(string)
+v.Local.sBIParam.Declare(string,"JOB")
+v.Local.sReportName.Declare(string,"GCG_5969_JobOperations.rpt")
+
+v.Local.sTopJob.Set(v.Screen.Form!cboJob.Text)
+
+'Get the GS BI Report ID
+F.Global.BI.GetIDFromName(v.Local.sReportName,v.Local.iBIRptID)
+
+F.Global.BI.PrintReport(V.local.IBIRptID,0,V.Local.sBIParam,v.Local.sTopJob,"GSView",True)
+
+Program.Sub.cmd1_Click.End
+
+Program.Sub.Build Report.Start
+Program.Sub.Build Report.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$SUPERVSR$}$4/30/2020 11:00:32 AM$}$False
+Program.Sub.Comments.End
