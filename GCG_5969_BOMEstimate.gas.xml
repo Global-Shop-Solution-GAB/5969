@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BorderStyle>None</BorderStyle>
+  <Pages>
+    <DefaultPage>
+      <Header>
+        <Offset>
+          <X>0</X>
+          <Y>0</Y>
+        </Offset>
+      </Header>
+      <Footer>
+        <Offset>
+          <X>0</X>
+          <Y>0</Y>
+        </Offset>
+      </Footer>
+      <PageSize>
+        <Width>0</Width>
+        <Height>0</Height>
+      </PageSize>
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <SelectionRect>
+      <Location>
+        <X>0</X>
+        <Y>79</Y>
+      </Location>
+      <Size>
+        <Width>24</Width>
+        <Height>2</Height>
+      </Size>
+      <X>0</X>
+      <Y>79</Y>
+      <Width>24</Width>
+      <Height>2</Height>
+    </SelectionRect>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <LineNumbersForeColor>WindowText</LineNumbersForeColor>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer>
+      <Offset>
+        <X>0</X>
+        <Y>0</Y>
+      </Offset>
+    </Footer>
+    <Header>
+      <Offset>
+        <X>0</X>
+        <Y>0</Y>
+      </Offset>
+    </Header>
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>79</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.ScreenSU.Start</string>
+        <string>Gui.Form..Create</string>
+        <string>Gui.Form..Size(4665,4020)</string>
+        <string>Gui.Form..MinX(0)</string>
+        <string>Gui.Form..MinY(0)</string>
+        <string>Gui.Form..Position(0,0)</string>
+        <string>Gui.Form..BackColor(-2147483633)</string>
+        <string>Gui.Form..MousePointer(0)</string>
+        <string>Gui.Form..Event(UnLoad,Form_UnLoad)</string>
+        <string>Gui.Form..Caption("BOM Job WC Status")</string>
+        <string>Gui.Form.lbl1.Create(Label,"Select Job",True,1110,255,0,630,1080,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Gui.Form.cboJob.Create(ComboBox)</string>
+        <string>Gui.Form.cboJob.Size(1860,330)</string>
+        <string>Gui.Form.cboJob.Position(1770,1005)</string>
+        <string>Gui.Form.cmd1.Create(Button)</string>
+        <string>Gui.Form.cmd1.Size(1440,810)</string>
+        <string>Gui.Form.cmd1.Position(2115,1920)</string>
+        <string>Gui.Form.cmd1.Caption("Build Report")</string>
+        <string>Gui.Form.cmd1.Event(Click,cmd1_Click)</string>
+        <string>Program.Sub.ScreenSU.End</string>
+        <string />
+        <string>Program.Sub.Preflight.Start</string>
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string>v.Local.sCoCode.Declare(string,"Global_")</string>
+        <string>v.Local.sconn.Declare(string)</string>
+        <string />
+        <string />
+        <string>	f.Intrinsic.String.Concat(v.Local.sCoCode,v.Caller.CompanyCode,v.Local.sCoCode)</string>
+        <string>	F.ODBC.Connection!conx.OpenConnection(V.Local.scocode,V.Ambient.Cuser,V.Ambient.Cpass)</string>
+        <string>	f.Intrinsic.String.Concat(v.Local.sconn,"Global_",v.Caller.CompanyCode,v.Local.sconn)</string>
+        <string>	F.ODBC.Connection!common.OpenConnection(V.Local.Sconn,V.Ambient.Cuser,V.Ambient.Cpass)</string>
+        <string />
+        <string>		</string>
+        <string>	'POPULATE DROPDOWN WITH VALID JOBS</string>
+        <string>	F.ODBC.Connection!ConX.OpenLocalRecordsetRO("rstJobs","SELECT DISTINCT JOB FROM JOB_HEADER where (suffix = '000' or suffix = '') and date_closed = '000000' ORDER BY JOB")</string>
+        <string>	F.Intrinsic.Control.DoUntil(V.ODBC.ConX!rstJobs.EOF,=,True)</string>
+        <string>		Gui.Form.cboJob.AddItem(V.ODBC.ConX!rstJobs.FieldVal!JOB)</string>
+        <string>			F.ODBC.ConX!rstJobs.MoveNext</string>
+        <string>	F.Intrinsic.Control.Loop</string>
+        <string />
+        <string>	gui.Form..Show</string>
+        <string />
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.Form_UnLoad.Start</string>
+        <string>f.Intrinsic.Control.End</string>
+        <string />
+        <string>F.ODBC.ConX!rstCommon.Close</string>
+        <string />
+        <string>F.ODBC.Common!rstCommon.Close</string>
+        <string>	</string>
+        <string />
+        <string>Program.Sub.Form_UnLoad.End</string>
+        <string />
+        <string>Program.Sub.cmd1_Click.Start</string>
+        <string>v.Local.sTopJob.Declare(string)</string>
+        <string>v.Local.sTopSuffix.Declare(string)</string>
+        <string>v.Local.sSqlTopJob.Declare(string)</string>
+        <string>v.Local.sTopJobSql.Declare(string)</string>
+        <string>V.Local.IBIRptID.Declare</string>
+        <string>V.Local.lBIRptID.Declare</string>
+        <string>v.Local.sSql.Declare(string)</string>
+        <string>v.Local.sBIParam.Declare(string,"JOB")</string>
+        <string>v.Local.sReportName.Declare(string,"GCG_5969_JobOperations.rpt")</string>
+        <string />
+        <string>v.Local.sTopJob.Set(v.Screen.Form!cboJob.Text)</string>
+        <string />
+        <string>'Get the GS BI Report ID</string>
+        <string>F.Global.BI.GetIDFromName(v.Local.sReportName,v.Local.iBIRptID)</string>
+        <string />
+        <string>F.Global.BI.PrintReport(V.local.IBIRptID,0,V.Local.sBIParam,v.Local.sTopJob,"GSView",True)</string>
+        <string />
+        <string>Program.Sub.cmd1_Click.End</string>
+        <string />
+        <string>Program.Sub.Build Report.Start</string>
+        <string>Program.Sub.Build Report.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$$}$SUPERVSR$}$4/30/2020 11:00:32 AM$}$False</string>
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling>
+    <WindowOriginY>19</WindowOriginY>
+    <Options>None</Options>
+  </Scrolling>
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>19</Y>
+        </EndPoint>
+        <Text>Program.Sub.ScreenSU</Text>
+        <DisplayText>Program.Sub.ScreenSU</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>21</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>22</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>24</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>44</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>46</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>54</Y>
+        </EndPoint>
+        <Text>Program.Sub.Form_UnLoad</Text>
+        <DisplayText>Program.Sub.Form_UnLoad</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>56</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>74</Y>
+        </EndPoint>
+        <Text>Program.Sub.cmd1_Click</Text>
+        <DisplayText>Program.Sub.cmd1_Click</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>76</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>77</Y>
+        </EndPoint>
+        <Text>Program.Sub.Build Report</Text>
+        <DisplayText>Program.Sub.Build Report</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>79</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>81</Y>
+        </EndPoint>
+        <Text>Program.Sub.Comments</Text>
+        <DisplayText>Program.Sub.Comments</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
